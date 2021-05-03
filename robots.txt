@@ -1,2 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /*/robots.txt
+Sitemap: https://carzaim.ru/sitemap.xml
+
+User-agent: GoogleBot
+Allow: /
+Disallow: /*/robots.txt
+
+User-agent: Yandex
+Disallow: /*/

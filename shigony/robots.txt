@@ -1,2 +1,10 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://credeo.ru/sitemap.xml
+
+User-agent: GoogleBot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /*/robots.txt
