@@ -43,7 +43,7 @@
 
   <link rel="stylesheet" href="combine/5dce4cd5a65a1fd5d1561e6cce8bc192-1615306982.css">
   <link rel="stylesheet" href="combine/0fc328048b757b440b97d5f420c3b7ce-1622479467.css">
-  <link rel="stylesheet" href="https://carzaim.ru/themes/thebakerdev-zenii/assets/dist/css/style.css">
+  <link rel="stylesheet" href="/themes/thebakerdev-zenii/assets/dist/css/style.css">
 
   <script defer src="optimize.js?id=OPT-WBDDGQK"></script>
 </head>
@@ -185,7 +185,7 @@
                   <script>var submitted=false;</script>
                   <iframe name="iframe1" id="hidden_iframe" style="display:none;" onload="
                   if(submitted)
-                  {getHiddenForm.classList.remove(showForm);
+                  {
                     document.getElementById('form-message').classList.remove('hidden');
                     document.getElementById('form-message-2').classList.remove('hidden');
                   setTimeout(() => {document.getElementById('form-2').reset();
@@ -194,11 +194,11 @@
                     document.getElementById('form-message-2').classList.add('hidden');}, 6000)}
                   "></iframe>
                   <iframe name="iframe1" class="hidden"></iframe>
-<form id="form" class="speed_form valid-form" method="POST" action="#" target="iframe1">
+<form id="form" class="speed_form valid-form" method="POST" action="#" target="iframe1"  onsubmit="submitted=true">
     
         <div class="base-form grid lg:grid-flow-col relative ">
 
-        <input type="text" data-id="phone" name="phone" placeholder="+7" class="speed_form-phone phone-mask w-full mb-3 lg:mb-0 lg:rounded-r-none speed_form_phone outline-none form-input font-weight-300 block bg-gray-100 text-gray-500 focus:outline-none focus:bg-white focus:outline-none focus:bg-white focus:shadow-none border-gray-200">
+        <input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="13" required data-id="phone" name="phone" placeholder="+7____________" class="speed_form-phone phone-mask w-full mb-3 lg:mb-0 lg:rounded-r-none speed_form_phone outline-none form-input font-weight-300 block bg-gray-100 text-gray-500 focus:outline-none focus:bg-white focus:outline-none focus:bg-white focus:shadow-none border-gray-200">
               <input type="hidden" name="amo" value="false">
               <input type="hidden" name="quiz" value="false">
               <input type="hidden" name="url" value="https://carzaim.ru/">
@@ -206,12 +206,12 @@
               <input class="refferer" type="hidden" name="utm_refferer" value="">
                     
         <div class="time w-full">
-            <button id="form-message" class="speed_form-button button-submit w-full lg:rounded-l-none button button--checkout button--md">
+            <button class="speed_form-button button-submit w-full lg:rounded-l-none button button--checkout button--md">
     <span class="submit">Получить</span>
 </button>
         </div>
 
-        <div class="text-gray-500 bg-gray-100 block p-10 rounded hidden speed-form-success-message">
+        <div class="text-gray-500 bg-gray-100 block p-10 rounded hidden speed-form-success-message" id="form-message">
             <p class="text-gray-500 font-size-h3 font-bold">Отправлено!</p>
             <p class="text-gray-500">Спасибо за заявку, мы скоро вам позвоним!</p>
         </div>
@@ -424,11 +424,11 @@
                 <div class='t396__elem tn-elem tn-elem__2560479611595246881368 t-animate' data-elem-id='1595246881368' data-elem-type='form' data-field-top-value="55" data-field-top-res-320-value="30" data-field-left-value="20" data-field-left-res-320-value="11" data-field-width-value="500" data-field-width-res-320-value="300" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px" data-animate-style="zoomin" data-animate-duration="1" data-animate-scale="0.9" data-field-inputpos-value="v" data-field-inputfontfamily-value="Formular" data-field-inputfontsize-value="18" data-field-inputfontweight-value="400" data-field-inputcolor-value="#2b2b2b" data-field-inputbgcolor-value="#fff" data-field-inputbordercolor-value="#404040" data-field-inputbordersize-value="1" data-field-inputheight-value="55" data-field-inputmargbottom-value="30" data-field-inputmargright-value="20" data-field-inputtitlefontsize-value="16" data-field-inputtitlefontweight-value="400" data-field-inputtitlecolor-value="#000" data-field-inputtitlemargbottom-value="5" data-field-inputelscolor-value="#f59e0b" data-field-inputelsfontweight-value="400" data-field-inputelsfontsize-value="14" data-field-inputsstyle-value="y" data-field-buttontitle-value="Отправить" data-field-buttoncolor-value="#fff" data-field-buttonbgcolor-value="#f59e0b" data-field-buttonradius-value="100" data-field-buttonmargtop-value="40" data-field-buttonwidth-value="160" data-field-buttonheight-value="55" data-field-buttonfontfamily-value="Formular" data-field-buttonfontsize-value="18" data-field-buttonfontweight-value="500" data-field-receivers-value="a0a43be0fa71d417b7da6186d0b6659f,ecbeb5270056a6a3c78222cefbab9391">
 
                   
-<form class="speed_form valid-form" id="form-2" action="#" target="iframe1" method="POST">
+<form class="speed_form valid-form" id="form-2" action="#" target="iframe1" method="POST" onsubmit="submitted=true">
     
         <div class="base-form grid lg:grid-flow-col relative ">
 
-        <input type="text" data-id="phone" name="phone" placeholder="+7" class="speed_form-phone phone-mask w-full mb-3 lg:mb-0 lg:rounded-r-none speed_form_phone outline-none form-input font-weight-300 block bg-gray-100 text-gray-500 focus:outline-none focus:bg-white focus:outline-none focus:bg-white focus:shadow-none border-gray-200">
+        <input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="13" required name="phone" placeholder="+7" class="speed_form-phone phone-mask w-full mb-3 lg:mb-0 lg:rounded-r-none speed_form_phone outline-none form-input font-weight-300 block bg-gray-100 text-gray-500 focus:outline-none focus:bg-white focus:outline-none focus:bg-white focus:shadow-none border-gray-200">
         <input type="hidden" name="amo" value="false">
         <input type="hidden" name="quiz" value="false">
         <input type="hidden" name="url" value="https://carzaim.ru/">

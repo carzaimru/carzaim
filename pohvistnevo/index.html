@@ -185,7 +185,7 @@
                   <script>var submitted=false;</script>
                   <iframe name="iframe1" id="hidden_iframe" style="display:none;" onload="
                   if(submitted)
-                  {getHiddenForm.classList.remove(showForm);
+                  {
                     document.getElementById('form-message').classList.remove('hidden');
                     document.getElementById('form-message-2').classList.remove('hidden');
                   setTimeout(() => {document.getElementById('form-2').reset();
@@ -198,7 +198,7 @@
     
         <div class="base-form grid lg:grid-flow-col relative ">
 
-        <input type="text" data-id="phone" name="phone" placeholder="+7" class="speed_form-phone phone-mask w-full mb-3 lg:mb-0 lg:rounded-r-none speed_form_phone outline-none form-input font-weight-300 block bg-gray-100 text-gray-500 focus:outline-none focus:bg-white focus:outline-none focus:bg-white focus:shadow-none border-gray-200">
+        <input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="13" required name="phone" placeholder="+7" class="speed_form-phone phone-mask w-full mb-3 lg:mb-0 lg:rounded-r-none speed_form_phone outline-none form-input font-weight-300 block bg-gray-100 text-gray-500 focus:outline-none focus:bg-white focus:outline-none focus:bg-white focus:shadow-none border-gray-200">
               <input type="hidden" name="amo" value="false">
               <input type="hidden" name="quiz" value="false">
               <input type="hidden" name="url" value="https://carzaim.ru//pohvistnevo/">
@@ -206,12 +206,12 @@
               <input class="refferer" type="hidden" name="utm_refferer" value="">
                     
         <div class="time w-full">
-            <button id="form-message" class="speed_form-button button-submit w-full lg:rounded-l-none button button--checkout button--md">
+            <button class="speed_form-button button-submit w-full lg:rounded-l-none button button--checkout button--md">
     <span class="submit">Получить</span>
 </button>
         </div>
 
-        <div class="text-gray-500 bg-gray-100 block p-10 rounded hidden speed-form-success-message">
+        <div class="text-gray-500 bg-gray-100 block p-10 rounded hidden speed-form-success-message" id="form-message">
             <p class="text-gray-500 font-size-h3 font-bold">Отправлено!</p>
             <p class="text-gray-500">Спасибо за заявку, мы скоро вам позвоним!</p>
         </div>
@@ -428,7 +428,7 @@
     
         <div class="base-form grid lg:grid-flow-col relative ">
 
-        <input type="text" data-id="phone" name="phone" placeholder="+7" class="speed_form-phone phone-mask w-full mb-3 lg:mb-0 lg:rounded-r-none speed_form_phone outline-none form-input font-weight-300 block bg-gray-100 text-gray-500 focus:outline-none focus:bg-white focus:outline-none focus:bg-white focus:shadow-none border-gray-200">
+        <input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="13" required name="phone" placeholder="+7" class="speed_form-phone phone-mask w-full mb-3 lg:mb-0 lg:rounded-r-none speed_form_phone outline-none form-input font-weight-300 block bg-gray-100 text-gray-500 focus:outline-none focus:bg-white focus:outline-none focus:bg-white focus:shadow-none border-gray-200">
         <input type="hidden" name="amo" value="false">
         <input type="hidden" name="quiz" value="false">
         <input type="hidden" name="url" value="https://carzaim.ru//pohvistnevo/">
